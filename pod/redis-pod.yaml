@@ -1,0 +1,18 @@
+# kubectl run redis --image=redis123 --dry-run=client -o yaml > redis-pod.yaml
+# kubectl apply -f pod.yml
+# kubectl edit pod redis
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: redis
+  name: redis
+spec:
+  containers:
+  - image: redis123
+    name: redis
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
