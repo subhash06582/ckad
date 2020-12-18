@@ -1,6 +1,5 @@
 # ckad
 # TechWorld with Nana
-
 kubectl apply commands in order :
 kubectl apply -f mongo-secret.yaml
 kubectl apply -f mongo.yaml
